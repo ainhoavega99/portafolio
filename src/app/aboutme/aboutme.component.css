@@ -1,0 +1,30 @@
+.container {
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-family: "Playfair Display SC", serif;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: purple;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: purple;
+    }
+}

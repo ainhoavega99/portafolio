@@ -15,16 +15,19 @@ h1 {
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 50px;
     width: 100%;
     justify-items: center;
+
+
 }
 
 .card {
     width: 20rem !important;
     padding: 17px;
     background-color: rgb(222, 217, 217);
-
+    position: inherit;
     img {
         width: 281px;
         height: 150px;
@@ -36,17 +39,26 @@ h1 {
     a {
         background-color: rgb(82, 58, 82);
         color: white;
-        &:hover{
+
+        &:hover {
             background-color: rgb(255, 255, 255);
             color: black;
             border-color: rgb(82, 58, 82);
         }
     }
-    h2{
+
+    h2 {
         margin-bottom: 1rem;
         font-family: "Anton", sans-serif;
     }
-    p{
+
+    p {
         margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
     }
 }

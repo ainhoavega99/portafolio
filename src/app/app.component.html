@@ -1,19 +1,18 @@
-
 <div class="main">
 
     <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" (change)="toggleMenu($event)" />
         <label class="menu__btn" for="menu__toggle">
             <span></span>
-    </label>
-    <ul class="menu__box">
-        <li><a class="menu__item" [routerLink]="'./'">Inicio</a></li>
-        <li><a class="menu__item" [routerLink]="'/proyects'">Proyectos</a></li>
-        <li><a class="menu__item" [routerLink]="'/aboutme'">Sobre mí</a></li>
-    </ul>
-</div>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" [routerLink]="'./'" (click)="closeMenu()">Inicio</a></li>
+            <li><a class="menu__item" [routerLink]="'/proyects'" (click)="closeMenu()">Proyectos</a></li>
+            <li><a class="menu__item" [routerLink]="'/aboutme'" (click)="closeMenu()">Sobre mí</a></li>
+        </ul>
+    </div>
 
-<div class="container">
-    <router-outlet></router-outlet>
-</div>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
 </div>

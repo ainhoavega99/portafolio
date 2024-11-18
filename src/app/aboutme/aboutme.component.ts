@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, UrlHandlingStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-aboutme',
@@ -9,5 +9,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './aboutme.component.css'
 })
 export class AboutmeComponent {
-
+  downloadPDF() {
+    const link = document.createElement('a');
+      link.href = '/assets/files/cv.pdf';
+      link.download = 'cv-Ainhoa-Vega.pdf';
+      link.click();
+    
+  }
 }

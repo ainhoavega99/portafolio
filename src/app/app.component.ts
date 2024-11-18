@@ -1,10 +1,11 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { AppModule } from './app.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterModule],
+  imports: [RouterModule, AppModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
